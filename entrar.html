@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pink Man</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="-IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1">
+    <link rel="stylesheet" href="login.css">
+
+<body>
+    <!-- CAIXA DE LOGIN -->
+    <div class="login-box">
+        <h2>Login<br>
+            ProjetoUni<br>
+            Senha:12345</h2>
+        <form>
+            <div class="user-box">
+                <input type="text" name="" required="" id="login">
+                <label>Usuario</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="" required="" id="senha">
+                <label>Senha</label>
+            </div>
+
+            <button type="button" onclick="logar(); return false">
+                entrar
+
+        </form>
+
+        <script>
+
+
+            function logar() {
+
+                var login = document.getElementById('login').value;
+                var senha = document.getElementById('senha').value;
+
+                if (login == "ProjetoUni" && senha == "12345") {
+                    alert('Sucesso');
+                    location.href = "index.html";
+                } else {
+                    alert('Usuario ou senha incorretos');
+                }
+
+            }
+
+        </script>
+    </div>
+</body>
+
+</html>
